@@ -1,6 +1,6 @@
 import { State } from './state';
 
-export function commandPokedex(state: State) {
+export async function commandPokedex(state: State) {
   const pokedexEntries = Object.keys(state.pokedex);
   if (pokedexEntries.length === 0) {
     console.log('Your Pokedex is empty!');
